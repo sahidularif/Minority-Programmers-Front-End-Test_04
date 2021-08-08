@@ -1,0 +1,22 @@
+:root {
+    --font: 'Red Hat Display', sans-serif;
+  }
+.proposal-activity span{
+    margin-right: 10px;
+}
+.proposal-activity span p{
+    color: #00000091;
+    font-weight:lighter;
+}
+.proposal-date span h6 b{
+    color: blue;
+}
+.proposal-date span h6 span{
+    color: blue;
+}
+.sort p{
+    margin: 0%; padding: 0%;
+}
+.sort i{
+    font-size: 40px;
+}

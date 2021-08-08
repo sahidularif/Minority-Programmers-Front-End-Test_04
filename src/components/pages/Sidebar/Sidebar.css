@@ -1,0 +1,24 @@
+.sidebar-container{
+    background-color: #151371;
+    color: white;
+    margin: 0%;
+}
+.profile{    
+    height: 150px;
+}
+.home{
+    height: 60px;
+    border-top: 3px solid #FF10AE;
+    border-bottom: 3px solid #FF10AE;
+}
+.governance{
+    height: 20px;
+    border-bottom: 3px solid #FF10AE;
+    background-color: #151371;
+}
+.user-rol{
+    font-size: 14px;
+    margin: 0%;
+    padding: 0%;
+    background-color: #151371;
+}

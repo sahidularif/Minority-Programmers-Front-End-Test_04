@@ -1,0 +1,29 @@
+.proposal-progress {
+  padding: 1rem 0.4rem 0;
+}
+.proposal-parcent {
+  background: #b2b2b2;
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+  position: relative;
+}
+.proposal-pecent_color {
+  height: 100%;
+  width: 35%;
+  background: #151371;
+  border-radius: 4px;
+}
+.proposal-progress-icon {
+  display: flex;
+  justify-content:space-evenly;
+  margin: 0;
+}
+.proposal-progress-icon .unaproved {
+    text-align: start;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.proposal-progress-icon .unaproved h6 {
+    margin-left: -15px;
+}
