@@ -65,7 +65,7 @@ const Arif = ({toggleSidebar})=> {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/modarator/elect-proposal"
+                                to="/modarator"
                                 activeClassName=""
                                 className="nav-links"
                                 onClick={handleClick}
@@ -76,7 +76,7 @@ const Arif = ({toggleSidebar})=> {
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/modarator"
+                                to="/core-team"
                                 activeClassName=""
                                 className="nav-links"
                                 onClick={handleClick}

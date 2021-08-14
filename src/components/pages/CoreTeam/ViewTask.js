@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import heroImage from '../../../images/Illustration.png'
-import pm from '../../../images/Group 1157.png';
-import taskUser from '../../../images/task-user.png';
+import heroImage from '../../../images/Illustration.png';
+import modIcon from '../../../images/mod-icon.png';
 import '../../common/common.css';
 import data from '../../../fakedata/Data.json';
 import TaskCard from '../../common/TaskCard';
+
 const ViewTask = () => {
-    const tasks = data[0].tasks
+    const plannedTask = data[0].tasks.slice(0, 6);
+    const reviewTask = data[0].tasks.slice(0, 5);
+    const completedTask = data[0].tasks.slice(0, 4);
     return (
         <>
 
@@ -15,7 +17,7 @@ const ViewTask = () => {
                     <div className="col-md-12 bg-black">
                         <div className="row d-flex justify-content-center align-items-center">
                             <div className="col-md-6 view-task-header">
-                                <img src={pm} alt="" className="img-fluid" />
+                                <img src={modIcon} alt="" className="img-fluid" />
                                 <div className="text-center text-light">
                                     <h1>View Tasks</h1>
                                     <h4>View, organize and access your tasks here.</h4>
@@ -39,7 +41,7 @@ const ViewTask = () => {
                                 </div>
                                 <div className="row d-flex">
                                     {
-                                        tasks.map((task, index) =>
+                                        plannedTask.map((task, index) =>
                                             <TaskCard task={task} key={index} />
                                         )
                                     }
@@ -54,7 +56,7 @@ const ViewTask = () => {
                                 </div>
                                 <div className="row d-flex align-items-center justify-content-center">
                                     {
-                                        tasks.map((task, index) =>
+                                        reviewTask.map((task, index) =>
                                             <TaskCard task={task} key={index} />
                                         )
                                     }
@@ -69,7 +71,7 @@ const ViewTask = () => {
                                 </div>
                                 <div className="row d-flex">
                                     {
-                                        tasks.map((task, index) =>
+                                        completedTask.map((task, index) =>
                                             <TaskCard task={task} key={index} />
                                         )
                                     }

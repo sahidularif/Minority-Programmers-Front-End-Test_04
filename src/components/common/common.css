@@ -49,11 +49,13 @@
     border: 1px solid #151371;
     color: #151371; 
     height: 40px; font-size: 18px;
+    border: none;
   }
   .btn-create{
     background-color: #151371;
     color: #fff; 
     height: 40px; font-size: 18px;
+    border: none;
   }
   hr.line{
     border: 2px solid white;
@@ -207,6 +209,13 @@
     height: 30px;
     color: white;
     border-radius: 5px;
+  }
+  .ct-notification-btn{
+    background: linear-gradient(103.85deg, #FF00B8 2.54%, #FF655B 58.76%, #FFC700 113.82%);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 40px;
   }
   /* proposal-status */
   .proposal-status{

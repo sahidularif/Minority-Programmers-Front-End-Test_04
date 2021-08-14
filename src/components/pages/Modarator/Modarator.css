@@ -35,6 +35,9 @@
     justify-content: center;
     margin-bottom:20px
 }
+.core-team-title{
+    align-items:flex-start;
+}
 .proposal-content-title{
    
     font-family: 'Red Hat Display', sans-serif;
@@ -72,6 +75,9 @@
     color:#fff;
     padding-left: 30px;
     padding-top: 20px;
+}
+.notification-title p{
+    text-align: left;
 }
 .notification-title h2{
     text-transform: uppercase;
@@ -125,6 +131,7 @@
     font-weight: normal;
     color: #FF00B8;
     padding-top: 20px;
+    padding-right: 40px;
 }
 .elect-proposal-title h4{
     font-family: 'Red Hat Display', sans-serif;
@@ -177,12 +184,12 @@
 }
 .user-details-prospol span{
     font-family: 'Red Hat Display', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 13px;
-        line-height: 17px;
-        letter-spacing: 0.03em;    
-        color: rgba(0, 0, 0, 0.4);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.03em;    
+    color: rgba(0, 0, 0, 0.4);
 }
 .user-details-prospol h5{
     font-family: 'Red Hat Display', sans-serif;
@@ -287,21 +294,72 @@
     height: 100px;
 }
 .btn-view{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
     background: #FFFFFF;
     border: 1px solid #151371;
     box-sizing: border-box;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
+    width: 180px;
     height: 40px;
 }
+.ct-notification-btn{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(103.85deg, #FF00B8 2.54%, #FF655B 58.76%, #FFC700 113.82%);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    border: none;
+  }
 .btn-elect{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 20px;
     background: #151371;
     color:#fff;
-    border: 1px solid #fff;
+    border: none;
+    width: 180px;
     box-sizing: border-box;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     height: 40px;
+}
+.proposal-details-btn{
+    padding-right: 40px;
+}
+.btn-proposal-approve{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 97.69%;
+    background: #151371;
+    color:#fff;
+    border: none;
+    width: 102px;
+    height: 40px;
+    margin: 0px 5px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.btn-proposal-disapprove{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 97.69%;
+    background: #fff;
+    color:#151371;
+    border: none;
+    width: 128px;
+    height: 40px;
+    margin: 0px 5px;
+    border: 1px solid #151371;
+    box-sizing: border-box;
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
 }
 /* elected short proposal */
 .unselected-task{

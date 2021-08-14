@@ -59,18 +59,29 @@ const Arif = ({toggleSidebar})=> {
                                 className="nav-links"
                                 onClick={handleClick}
                             >
-                                Project
+                                Project Manager
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink
                                 exact
-                                to="/contact"
+                                to="/modarator"
                                 activeClassName=""
                                 className="nav-links"
                                 onClick={handleClick}
                             >
-                                Team
+                                Modarator
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/core-team"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                Core Team
                             </NavLink>
                         </li>
                     </ul>

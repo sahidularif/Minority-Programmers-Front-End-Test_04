@@ -13,6 +13,11 @@ import RejectedProposal from './RejectedProposal';
 
 const ProposalNotification = () => {
     const tasks = data[1].proposals.slice(0, 2);
+    const tasks2 = data[1].proposals;
+    const pendingProposal = (tasks2.filter(rejected => rejected.approvedStatus == null)).slice(0, 2);
+    const approvedProposal = (tasks2.filter(rejected => rejected.approvedStatus == true)).slice(0, 2);
+    const rejectedProposal = tasks2.filter(rejected => rejected.approvedStatus == false);
+    console.log(approvedProposal);
     // const items = list.slice(0, size)
     return (
         <>
@@ -43,7 +48,7 @@ const ProposalNotification = () => {
                             <p>The following proposals have been sent to be voted/ revoted by the core team.</p>
                         </div>
                         {
-                            tasks.map((task, index) =>
+                            pendingProposal.map((task, index) =>
                                 <PendingProposal key={index} task={task} />
                             )
                         }
@@ -57,7 +62,7 @@ const ProposalNotification = () => {
                             <p>The following proposals you elected, were approved by the core team.</p>
                         </div>
                         {
-                            tasks.map((task, index) =>
+                            approvedProposal.map((task, index) =>
                                 <ApprovedProposal key={index} task={task} />
                             )
                         }
@@ -71,7 +76,7 @@ const ProposalNotification = () => {
                             <p>The following proposals you elected, were rejected by the core team.</p>
                         </div>
                         {
-                            tasks.map((task, index) =>
+                            rejectedProposal.map((task, index) =>
                                 <RejectedProposal key={index} task={task} />
                             )
                         }

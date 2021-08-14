@@ -7,6 +7,7 @@ import Home from './components/pages/homePage/Home';
 import ProjectManager from './components/pages/projectManagerPage/ProjectManager';
 import Modarator from './components/pages/Modarator/Modarator';
 import MyElectedProposal from './components/pages/Modarator/MyElectedProposal';
+import CoreTeam from './components/pages/CoreTeam/CoreTeam';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/user"><User /></Route>
           <Route path="/manager"><ProjectManager /></Route>
           <Route path="/modarator"><Modarator /></Route>
+          <Route path="/core-team"><CoreTeam /></Route>
           <Route path="/create-task"><CreateTask /></Route>
           <Route path="/view-task"><ViewTask /></Route>
           <Route exact path="/"><Home /></Route>

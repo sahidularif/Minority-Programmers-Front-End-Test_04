@@ -4,6 +4,7 @@ import Header from './Header'
 import Home from './Home'
 import MyElectedProposal from './MyElectedProposal';
 import ProposalNotification from './ProposalNotification';
+import ViewTask from './ViewTask';
 const Modarator = () => {
     return (
         <div id="manager">
@@ -11,6 +12,7 @@ const Modarator = () => {
             <Route exact path="/modarator" component={Home} />
             <Route exact path="/modarator/my-elected-proposal" component={MyElectedProposal} />
             <Route exact path="/modarator/proposal-notification" component={ProposalNotification} />
+            <Route exact path="/modarator/task-status-notification" component={ViewTask} />
            
         </div>
     )

@@ -54,6 +54,36 @@
                     {
                         "id": 4,
                         "url": "../images/task-user.png"
+                    },
+                    {
+                        "id": 4,
+                        "url": "../images/user-ml.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
+            },
+            {
+                "id": 5,
+                "createdDate": "Mar 25",
+                "users": [
+                    {
+                        "id": 5,
+                        "url": "../images/task-user.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
+            },
+            {
+                "id": 6,
+                "createdDate": "Mar 25",
+                "users": [
+                    {
+                        "id": 6,
+                        "url": "../images/task-user.png"
+                    },
+                    {
+                        "id": 6,
+                        "url": "../images/user-ml.png"
                     }
                 ],
                 "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
@@ -73,7 +103,7 @@
                 "totalVotes": 267,
                 "views": 85,
                 "availblDayToLeft": 2,
-                "approvedStatus": null,
+                "approvedStatus": true,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             },
@@ -88,7 +118,7 @@
                 "totalVotes": 267,
                 "views": 85,
                 "availblDayToLeft": 1,
-                "approvedStatus": true,
+                "approvedStatus": null,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             },
@@ -103,7 +133,7 @@
                 "totalVotes": 267,
                 "views": 80,
                 "availblDayToLeft": 2,
-                "approvedStatus": null,
+                "approvedStatus": true,
                 "completedStatus": 67,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             },
@@ -133,7 +163,7 @@
                 "totalVotes": 267,
                 "views": 85,
                 "availblDayToLeft": 5,
-                "approvedStatus": false,
+                "approvedStatus": true,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             },
@@ -148,7 +178,7 @@
                 "totalVotes": 267,
                 "views": 85,
                 "availblDayToLeft": 3,
-                "approvedStatus": true,
+                "approvedStatus": null,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             },
@@ -163,7 +193,7 @@
                 "totalVotes": 267,
                 "views": 85,
                 "availblDayToLeft": 1,
-                "approvedStatus": null,
+                "approvedStatus": false,
                 "completedStatus": 100,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
             }

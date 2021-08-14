@@ -14,7 +14,6 @@ const ApprovedProposals = () => {
     return (
         <>
             <div className="container-fluid g-0 body-bg align-items-center">
-
                 <div className="row hero-proposal d-flex justify-content-center align-items-center">
                     <div className="col-md-5">
                         <img src={pm} alt="" className="img-fluid" />
@@ -26,16 +25,13 @@ const ApprovedProposals = () => {
                     </div>
                 </div>
                 <div className="row align-items-center ">
-
                     <div className="container-fluid proposal-container justify-content-center align-items-center">
                         <div className="row d-flex justify-content-center align-items-center g-0">
                             <div className="col-md-11 m-5 proposals">
                                 {
                                     proposalData.map(proposal => <PMProposals proposal={proposal}></PMProposals>)
                                 }
-
                             </div>
-
                         </div>
                     </div>
                 </div>
