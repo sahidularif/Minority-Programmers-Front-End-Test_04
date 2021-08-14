@@ -1,14 +1,16 @@
-import React from 'react';
-import Navbar from '../common/Navbar';
-import UserPage from './UserPage';
+import React from 'react'
+import Topbar from './Topbar'
+import UserPage from './UserPage'
 
-const User = () => {
+const Home = () => {
     return (
-        <div>
-            <Navbar/>
-            <UserPage/>
-        </div>
-    );
-};
+        <>
+            <section id="user">
+                <Topbar />
+            </section>
+            <UserPage />
+        </>
+    )
+}
 
-export default User;
+export default Home

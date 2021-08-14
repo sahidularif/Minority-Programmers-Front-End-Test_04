@@ -6,9 +6,9 @@ const PMProposals = (props) => {
     console.log(type);
     return (
         <div className="container-fluid p-4">
-            <div className="row justify-content-center align-items-center">
-                <div className="col-10 d-flex border bg-light align-items-center rounded-3">
-                    <div className="col-md-6 text-left proposal-title">
+            <div className="row justify-content-center align-items-center pm-proposal">
+                <div className="col-11 d-flex border bg-light align-items-between align-items-center rounded-3">
+                    <div className="col-md-6 proposal-title justify-content-center">
 
                         <h4>Proposal Title</h4>
                         <h5><strong>Type: </strong>{type}&nbsp;&nbsp;&nbsp;<strong>Category: </strong>{catergory}</h5>
@@ -23,12 +23,12 @@ const PMProposals = (props) => {
                             </span>
                         </span>
                     </div>
-                    <div className="col-md-6 d-flex justify-content-center align-items-center">
-                        <div className="col-md-10">
-                            <p><button className="btn-view w-50">View Proposal</button></p>
-                            <p><button className="btn-create w-50">Create Task</button></p>
+                    <div className="col-md-6 d-flex justify-content-evenly">
+                        <div className="col-md-5">
+                            <p><button className="btn-view w-100">View Proposal</button></p>
+                            <p><button className="btn-create w-100">Create Task</button></p>
                         </div>
-                        <div className="sort col-md-2 d-block">
+                        <div className="sort col-md-1">
                             <p><i class="fas fa-caret-up"></i></p>
                             <p>267</p>
                             <p><i class="fas fa-sort-down"></i></p>

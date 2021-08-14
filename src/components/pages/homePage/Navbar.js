@@ -1,85 +1,97 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from '../../common/Button';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import './Navbar.css';
-import brand from '../../../images/brand.png'
-import { Image } from 'react-bootstrap';
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
+import brand from '../../../images/brand.png';
+const Arif = ({toggleSidebar})=> {
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+    return (
+        <>
 
-  useEffect(() => {
-    showButton();
-  }, []);
+            <div class="topnav" id="myTopnav">
+                <img src={brand} alt="" />
+                <a href="#home" class="">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
 
-  window.addEventListener('resize', showButton);
+            <nav className="navbar">
+                <div className="nav-container">
+                    <div className="all" onClick={toggleSidebar}>
+                        <i className="fas fa-bars"></i>
+                        <span>All</span>
+                    </div>
 
-  return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/user' className='navbar-logo' onClick={closeMobileMenu}>
-            <Image src={brand} alt="minority logo" />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to="/user"
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                User
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-        </div>
-      </nav>
-    </>
-  );
+                    <ul className={click ? "nav-menu active" : "nav-menu"}>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/user"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                User
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/manager"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                Project Manager
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/modarator/elect-proposal"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                Modarator
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink
+                                exact
+                                to="/contact"
+                                activeClassName=""
+                                className="nav-links"
+                                onClick={handleClick}
+                            >
+                                Core Team
+                            </NavLink>
+                        </li>
+                    </ul>
+                    <div className="nav-icon" onClick={handleClick}>
+                        <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+                    </div>
+                </div>
+            </nav>
+        </>
+    );
 }
 
-export default Navbar;
+export default Arif;

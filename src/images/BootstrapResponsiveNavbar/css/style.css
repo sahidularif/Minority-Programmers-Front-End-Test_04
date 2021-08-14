@@ -1,0 +1,188 @@
+/*Whubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,
+Bootstrap which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser 
+supported, best quality world class designs.*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,900');
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+	overflow-x: hidden;
+	
+
+}
+h3{
+	text-align: center;
+	
+}
+p{
+	text-align: center;
+	font-weight: 700;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #333;
+
+}
+.nav>li>a.col{
+	color: #3db9e1;
+}
+.navbar-mynav{
+	  	background: #3db9e1;
+	   	 padding: 15px;
+	    text-transform: uppercase;
+	    margin: 0;
+}
+.navbar-mynav ul{
+	letter-spacing: 15px;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	float: right;
+
+}
+.navbar-mynav ul li{
+	list-style-type: none;
+}
+.navbar-mynav li .fa{
+	color: #fff;
+	font-size: 16px;
+    letter-spacing: 40px;
+}
+li .fa-facebook:hover{
+	color: red;
+}
+li .fa-twitter:hover{
+	color: blue;
+}
+li .fa-linkedin:hover{
+	color: red;
+}
+li .fa-pinterest:hover{
+	color: #C12504;
+}
+li .fa-google-plus:hover{
+	color: #C12504;
+}
+li .fa-youtube:hover{
+	color: #C12504;
+}
+li .fa-dribbble:hover{
+	color: #C12504;
+}
+.navbar-default{
+	padding: 10px;
+
+
+}
+
+
+
+@media(max-width: 991px){
+	.navbar-default{
+		text-align: center;
+	}
+.navbar-header {
+   
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+	float:none;
+	font-size: 30px;
+	font-weight: 700;
+}
+}
+
+@media(max-width: 768px){
+	.nav>li>a.col{
+	color: #3db9e1;
+}
+	.icon-bar{
+		background-color: #333;
+
+	}
+	.navbar-mynav ul{
+		float: none;
+		text-align: center;
+	}
+	.navbar-mynav ul li{
+		list-style-type: none;
+		display: inline-block;
+
+	}
+	.navbar-brand{
+		    font-size: 35px;
+		    margin: 0px auto;
+    		display: block;
+	}
+	.navbar-right li{
+		border: 1px solid #E3E1E0;
+		background: #EFECEB;
+		padding: 1px;
+	}
+	.navbar-right li:hover{
+		
+		background: #fff;
+		
+
+	}
+	.navbar-default .navbar-nav>li>a{
+		color: #333;
+	}
+	.navbar-default .navbar-nav>li>a:hover{
+		color: #3db9e1;
+
+	}
+	.navbar-toggle
+	{
+		margin: 0;
+	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+		margin-left:0;
+	}
+	.container-fluid
+	{
+		padding-right:0px;
+	}
+	.navbar-default .navbar-toggle{
+		border: none;
+		float: right;
+		margin: 10px auto;
+       display: block;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		color: none;
+
+	}
+	.navbar-mynav .pull-right{
+		display:block;
+		margin: 0 auto;
+		float: none;
+	}
+	.navbar-mynav li .fa{
+	
+	
+	letter-spacing: 14px;
+    
+}
+}
+@media(max-width: 393px)
+{
+	.navbar-brand{
+		    font-size: 25px;
+		    text-align: center;
+	}
+
+}
+@media(max-width: 329px){
+	.navbar-brand{
+		   font-size: 18px;;
+		    text-align: center;
+	}
+	.navbar-mynav li .fa{
+		font-size: 14px;
+		letter-spacing: 2px;
+
+	}
+
+}

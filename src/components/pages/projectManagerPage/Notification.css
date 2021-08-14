@@ -1,0 +1,31 @@
+
+.new-notification-title {
+    background: linear-gradient(
+    89.68deg,
+    rgba(255, 255, 255, 0) 0.11%,
+    rgba(255, 255, 255, 0.4) 3.97%,
+    rgba(255, 255, 255, 0.4) 11.3%,
+    rgba(255, 255, 255, 0.2) 26.93%,
+    rgba(255, 255, 255, 0) 99.72%
+    );
+    
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    padding: 10px 25px;
+}
+.new-notification-title h2 {
+    color: #151371;
+    text-transform: uppercase;
+}
+.new-notification-title p {
+margin-top: 10px;
+height: 1px;
+background: #151371;
+width: 100%;
+margin-left: 15px;
+}  
+.notification-subtitle span{
+    color: yellow;
+}

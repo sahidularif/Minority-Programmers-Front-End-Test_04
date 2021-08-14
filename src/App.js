@@ -1,23 +1,25 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/common/Navbar';
-import Home from './components/pages/Home';
-import HomePage from './components/pages/homePage/HomePage';
-import UserPage from './components/UserPage/UserPage';
 import User from './components/UserPage/User';
-import PmPage from './components/pages/projectManagerPage/PmPage';
 import CreateTask from './components/pages/projectManagerPage/CreateTask';
 import ViewTask from './components/pages/projectManagerPage/ViewTask';
+import Home from './components/pages/homePage/Home';
+import ProjectManager from './components/pages/projectManagerPage/ProjectManager';
+import Modarator from './components/pages/Modarator/Modarator';
+import MyElectedProposal from './components/pages/Modarator/MyElectedProposal';
+
 function App() {
   return (
     <>
       <Router>
         <Switch>          
           <Route path="/user"><User /></Route>
-          <Route path="/pmpage"><PmPage /></Route>
+          <Route path="/manager"><ProjectManager /></Route>
+          <Route path="/modarator"><Modarator /></Route>
           <Route path="/create-task"><CreateTask /></Route>
           <Route path="/view-task"><ViewTask /></Route>
-          <Route exact path="/"><HomePage /></Route>
+          <Route exact path="/"><Home /></Route>
+          
         </Switch>
       </Router>
     </>

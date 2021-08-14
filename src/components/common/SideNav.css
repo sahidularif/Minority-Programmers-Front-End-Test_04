@@ -1,0 +1,97 @@
+ .sidebar {
+    background-color: #151371;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.18);
+    min-width: 280px;
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+    
+  }
+  body.active-modal {
+    overflow-y: hidden;
+  }
+    
+  .btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+  }
+
+  #sidebar, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding: 15px;
+    z-index: 99999;
+  }
+  
+  .overlay {
+    background: rgba(43, 41, 41, 0.8);
+  }
+  .user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+  }
+  .sidebar ul{
+      color: white;
+      margin: 0%;padding: 0%;
+  }
+ .sidebar ul li{
+      list-style-type: none;
+      height: 50px;
+      justify-content: center;
+      align-items:center;
+      font-family: 'Red Hat Display';
+      padding-left: 35px;
+  } 
+
+  .home-link{
+      color: white;
+      text-decoration: none;
+      height: 50px;
+      border-top: 2px solid #18A0FB;
+      border-bottom: 2px solid #18A0FB;
+      padding-top: 10px;
+  }
+  .home-link a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 30px 35px;
+    
+  }
+  
+  .sidebar-title a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    padding: 35px 35px;
+    
+  }
+  .sidebar ul li:active,.sidebar ul li:hover {
+    background: rgba(212, 224, 214, 0.1);
+    mix-blend-mode: hard-light;
+    border-left: 3px solid #fff;
+}
+ .active{
+    background: rgba(212, 224, 214, 0.1);
+    mix-blend-mode: hard-light;
+    border-left: 3px solid #fff;
+}
+.sidebar-links a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Red Hat Display';
+}

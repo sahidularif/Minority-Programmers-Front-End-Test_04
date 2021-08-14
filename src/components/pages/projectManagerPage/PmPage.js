@@ -1,14 +1,15 @@
 import React from 'react';
-import Navbar from '../../common/Navbar';
-import ApprovedProposals from './ApprovedProposals';
-
+import Topbar from './Topbar';
+import ApprovedProposals from './ApprovedProposals'
 const PmPage = () => {
     return (
-        <div>
-            <Navbar />
-            <ApprovedProposals />
-        </div>
-    );
-};
+        <>
+            <section id="user">
+                <Topbar />
+            </section>
+            <ApprovedProposals/>
+        </>
+    )
+}
 
-export default PmPage;
+export default PmPage

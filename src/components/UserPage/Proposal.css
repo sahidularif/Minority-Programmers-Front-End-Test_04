@@ -16,7 +16,21 @@
 }
 .sort p{
     margin: 0%; padding: 0%;
+    color: gray;
 }
 .sort i{
     font-size: 40px;
+    color: gray;
+}
+.proposal-title h4{
+    color: #151371;
+}
+.proposal-title{
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    font-family:'Red Hat Display', sans-serif;
+}
+.pm-proposal{
+    font-family:'Red Hat Display', sans-serif;
 }

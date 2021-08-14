@@ -1,0 +1,8 @@
+body, html { overflow-x: hidden; }
+.hero-user{
+    background: rgba(255, 255, 255, 0.8);
+mix-blend-mode: normal;
+}
+.main-content{
+    background: linear-gradient(90deg, rgb(255, 161, 219) 0%, rgb(255, 224, 161) 100%);
+}

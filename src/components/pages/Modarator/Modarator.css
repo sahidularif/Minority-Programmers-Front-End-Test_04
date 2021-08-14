@@ -1,0 +1,478 @@
+.modrator-hero-section{
+    background: rgba(0, 0, 0, 0.8);
+    mix-blend-mode: normal;
+}
+.elect-proposal-container{
+    border-radius: 30px;
+    background: rgba(21, 19, 113, 0.7);
+    mix-blend-mode: normal;
+    margin-bottom:20px
+}
+.notification-proposal-container{
+    border-radius: 30px;
+    background: rgba(21, 19, 113, 0.7);
+    mix-blend-mode: normal;
+    margin-bottom:20px
+}
+.approved-proposal-container{
+    border-radius: 30px;
+    background: rgba(102, 102, 102, 0.6);
+    mix-blend-mode: normal;
+    margin-bottom:20px
+}
+.other-proposal-container{
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    mix-blend-mode: normal;
+    justify-content: center;
+    margin-bottom:20px
+}
+.rejected-proposal-container{
+    background: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    border-radius: 30px;
+    mix-blend-mode: normal;
+    justify-content: center;
+    margin-bottom:20px
+}
+.proposal-content-title{
+   
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 15px;
+
+}
+.elect-proposal-container p{   
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.notification-proposal-container p{   
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    text-align: left;
+    color: #FFFFFF;
+}
+.notification-title{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: start;
+    color:#fff;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.notification-title h2{
+    text-transform: uppercase;
+}
+.other-proposal-container p{   
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.modarator-hero-title h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.modarator-hero-title p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    text-align: center;
+    color: #fff;
+}
+.modarator-hero-title span{
+    color: yellow;
+}
+.elect-proposal-title {
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-between;
+    text-transform:capitalize;
+    display: block;
+}
+.proposal-notification-title {
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-between;
+    text-transform:capitalize;
+    display: flex;
+}
+.days-to-left h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FF00B8;
+    padding-top: 20px;
+}
+.elect-proposal-title h4{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28.5px;
+    color: #151371;
+    padding-left: 20px;
+}
+.elect-proposal-title h6{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #282828;
+    padding-left: 20px;
+}
+
+.proposal-notification-title h4{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28.5px;
+    color: #151371;
+    padding-left: 20px;
+}
+
+.proposal-title-type-cate h6{    
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #282828;
+}
+.elect-proposal-box{
+    font-family: 'Red Hat Display', sans-serif;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border-radius: 0px;
+    justify-content: center;
+    border-top: 5px solid #FF00B8;
+    padding-top:10px;  
+    margin: 50px 0px;  
+}
+.user-details-prospol{
+    
+    display: flex;
+    align-items: center;
+}
+.user-details-prospol span{
+    font-family: 'Red Hat Display', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 0.03em;    
+        color: rgba(0, 0, 0, 0.4);
+}
+.user-details-prospol h5{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 97.69%;
+    color: #282828;
+}
+.user-details-prospol img, .username, .created-date-proposal{
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    color: #282828;
+    font-weight: normal;
+}
+.user-details-prospol.username{
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+.proposal-user-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(40, 40, 40, 0.4);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.4);
+}
+.proposal-details{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.replies span, .views span{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #282828;
+}
+.replies h6, .views h6{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14;
+    color: rgba(0, 0, 0, 0.4);
+}
+.proposal-votes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.proposal-votes i{
+    cursor: pointer;
+}
+.proposal-votes .fa-caret-up, .proposal-votes .fa-sort-down{
+    color: #9F9F9F;
+    font-size: 40px;
+    padding: 0px 40px;
+    bottom: -10px;
+}
+.proposal-votes .fa-sort-down{
+     padding-top: 0;
+     margin-top: 0;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     clear: both;
+}
+.vote-count-num{
+    color: rgba(0, 0, 0,);
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    top: 0; bottom: 0%;
+}
+.views{
+    padding-left: 10px;
+}
+.proposal-text-btn{
+    padding: 0px 15px 0px 15px ;
+}
+.proposal-text p{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;    
+    color: #444444;
+}
+.proposal-btn{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+}
+.btn-view{
+    background: #FFFFFF;
+    border: 1px solid #151371;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 40px;
+}
+.btn-elect{
+    background: #151371;
+    color:#fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    height: 40px;
+}
+/* elected short proposal */
+.unselected-task{
+    opacity: 0.1;
+}
+.proposal-box{
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border-radius: 0px 20px 20px 0px;
+    border-left: 5px solid #00A3FF;
+    justify-content: center;
+}
+.proposl-title-category h5{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28.5px;
+    line-height: 111.19%;
+    margin-bottom: 0%;
+    padding-left: 10px;
+    color: #151371;
+}
+.proposl-title-category i{
+    padding-right: 15px;
+}
+.proposl-title-category span{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 97.69%;
+    color: #282828;
+    padding-left: 50px;
+}
+/* Proposal Progress Bar */
+.proposal--status {
+    padding: 1rem 0.4rem 0;
+  }
+  .proposal-progress-bar{
+    padding-left: 50px;
+  }
+  .progress-icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 !important;
+  }
+  .progress-icon .unaproved {
+      text-align: start;
+      margin-left: -10px;
+  }
+  .progress-icon .unaproved h6, .planned h6 {
+      margin-left: -15px;
+      font-family: 'Red Hat Display', sans-serif;
+      margin-right: -15px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: #000000;
+  }
+  .progress-icon .planned,
+  .progress-icon .progress
+   {
+      text-align: center;
+  }
+  .progress-icon .completed {
+      text-align: end;
+      margin-right: -10px;
+  }
+  .progress-icon .completed h6{
+    font-family: 'Red Hat Display', sans-serif;
+    margin-right: -15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+ 
+  .proposal-percent {
+    background: #b2b2b2;
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+  }
+  .proposal-bar-parcent {
+    height: 100%;
+    width: 35%;
+    background: #151371;
+    border-radius: 4px;
+  }
+  .progress{
+    display: block;
+  }
+  .proposal-percent{
+    top: 6px;
+  }
+  .replies h5, .views h5{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    margin-top: 0%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    color: #282828;
+  }
+  .replies span, .views span{
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;    
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .replies, .views{
+      text-align: center;
+      
+  }
+  .proposal-elect-date p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 131.19%;
+    text-align: center;    
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .proposal-elect-date strong{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 131.19%;
+    text-align: center;    
+    color: #FF00B8;
+  }
+  .proposal-elect-date span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 131.19%;
+    text-align: center;    
+    color: #FF00B8;
+  }
+  .proposal-count-date{
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+  .btn-view-proposal{
+    font-family: 'Red Hat Display', sans-serif;
+    width: 181px;
+    height: 40px;    
+    background: #151371;    
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color:#fff;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 97.69%;
+    text-align: center;    
+    color: #FFFFFF;
+  }

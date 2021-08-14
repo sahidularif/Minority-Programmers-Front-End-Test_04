@@ -1,41 +1,62 @@
+
 [
     {
         "tasks": [
             {
                 "id": 1,
                 "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
+                "users": [
+                    {
+                        "id": 1,
+                        "url": "../images/task-user.png"
+                    },
+                    {
+                        "id": 1,
+                        "url": "../images/user-la.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
             },
             {
                 "id": 2,
                 "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
+                "users": [
+                    {
+                        "id": 2,
+                        "url": "../images/task-user.png"
+                    },
+                    {
+                        "id": 2,
+                        "url": "../images/user-vn.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
             },
             {
                 "id": 3,
                 "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
+                "users": [
+                    {
+                        "id": 3,
+                        "url": "../images/task-user.png"
+                    },
+                    {
+                        "id": 3,
+                        "url": "../images/user-ml.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
             },
             {
                 "id": 4,
                 "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
-            },
-            {
-                "id": 5,
-                "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
-            },
-            {
-                "id": 6,
-                "createdDate": "Mar 25",
-                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit.",
-                "type":["Design","Develop"]
+                "users": [
+                    {
+                        "id": 4,
+                        "url": "../images/task-user.png"
+                    }
+                ],
+                "description": "Lorem ipsum dolor sit amet, consecte tur adipiscing elit."
             }
         ]
     },
@@ -43,14 +64,15 @@
         "proposals": [
             {
                 "id": 1,
-                "title": "Proposal Title",                
-                "type": "Enhacment",
+                "title": "Proposal Title",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 2,
                 "approvedStatus": null,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -58,13 +80,14 @@
             {
                 "id": 2,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 1,
                 "approvedStatus": true,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -72,13 +95,14 @@
             {
                 "id": 3,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 80,
+                "availblDayToLeft": 2,
                 "approvedStatus": null,
                 "completedStatus": 67,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -86,13 +110,14 @@
             {
                 "id": 4,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 3,
                 "approvedStatus": null,
                 "completedStatus": 2,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -100,13 +125,14 @@
             {
                 "id": 5,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 5,
                 "approvedStatus": false,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -114,13 +140,14 @@
             {
                 "id": 6,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 3,
                 "approvedStatus": true,
                 "completedStatus": 34,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
@@ -128,13 +155,14 @@
             {
                 "id": 7,
                 "title": "Proposal Title",
-                "type": "Enhacment",
+                "type": "Enhancement",
                 "category": "Incubator",
                 "createdBy": "Username",
                 "createdDate": "Mar 25",
                 "replies": 58,
                 "totalVotes": 267,
                 "views": 85,
+                "availblDayToLeft": 1,
                 "approvedStatus": null,
                 "completedStatus": 100,
                 "description": "Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex."
