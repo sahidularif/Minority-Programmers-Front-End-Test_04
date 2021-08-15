@@ -6,8 +6,7 @@ import '../../common/common.css';
 import HeroSection from './HeroSection';
 const HomePage = () => {
     return (
-        <>
-            
+        <>            
             <HeroSection/>
         </>
     );

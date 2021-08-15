@@ -1,13 +1,9 @@
-import  {Button} from '../../common/Button';
+import { Button } from '../../common/Button';
 import React from 'react';
 import './HeroSection.css';
 const HeroSection = () => {
     return (
         <div className='hero-container'>
-            {/* <div className="Navbar">
-                <Navbar></Navbar>
-            </div> */}
-            {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
             <div className="hero-text">
                 <h3>MINORITY PROGRAMMERS ASSOCIATION</h3>
                 <p><i>Code, Culture, and Community.</i></p>

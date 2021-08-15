@@ -3,7 +3,7 @@ import heroImage from '../../../images/Illustration.png';
 import modIcon from '../../../images/mod-icon.png';
 import '../../common/common.css';
 import data from '../../../fakedata/Data.json';
-import TaskCard from '../../common/TaskCard';
+import TaskCard from './TaskCard';
 
 const ViewTask = () => {
     const plannedTask = data[0].tasks.slice(0, 6);
@@ -32,14 +32,14 @@ const ViewTask = () => {
                 <div className="row root-bg">
                     <div className="col-md-12 ">
                         <div className="row d-flex justify-content-around align-items-start p-5">
-
+                            {/* To Do Tasks */}
                             <div className="col-md-5 planned-task mb-5">
                                 <div className="row">
                                     <div className="col-md-12 planned-title">
-                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> Planned Tasks</h4>
+                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> To Do Tasks</h4>
                                     </div>
                                 </div>
-                                <div className="row d-flex">
+                                <div className="row d-flex justify-content-center align-items-center">
                                     {
                                         plannedTask.map((task, index) =>
                                             <TaskCard task={task} key={index} />
@@ -47,11 +47,11 @@ const ViewTask = () => {
                                     }
                                 </div>
                             </div>
-
+                            {/* In-Progress Tasks */}
                             <div className="col-md-5 planned-task">
                                 <div className="row">
                                     <div className="col-md-12 planned-title">
-                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> In Review Tasks</h4>
+                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> In-Progress Tasks</h4>
                                     </div>
                                 </div>
                                 <div className="row d-flex align-items-center justify-content-center">
@@ -62,7 +62,52 @@ const ViewTask = () => {
                                     }
                                 </div>
                             </div>
-
+                            {/* Ready For Review Tasks */}
+                            <div className="col-md-5 planned-task mb-5">
+                                <div className="row">
+                                    <div className="col-md-12 planned-title">
+                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> Ready For Review Tasks</h4>
+                                    </div>
+                                </div>
+                                <div className="row d-flex">
+                                    {
+                                        completedTask.map((task, index) =>
+                                            <TaskCard task={task} key={index} />
+                                        )
+                                    }
+                                </div>
+                            </div>
+                            {/* In Review Tasks */}
+                            <div className="col-md-5 planned-task mb-5">
+                                <div className="row">
+                                    <div className="col-md-12 planned-title">
+                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> In Review Tasks</h4>
+                                    </div>
+                                </div>
+                                <div className="row d-flex">
+                                    {
+                                        completedTask.map((task, index) =>
+                                            <TaskCard task={task} key={index} />
+                                        )
+                                    }
+                                </div>
+                            </div>
+                            {/* Revision Required Tasks */}
+                            <div className="col-md-5 planned-task">
+                                <div className="row">
+                                    <div className="col-md-12 planned-title">
+                                        <h4><i style={{ color: '#FFC700' }} class="far fa-check-circle" /> Revision Required Tasks</h4>
+                                    </div>
+                                </div>
+                                <div className="row d-flex">
+                                    {
+                                        completedTask.map((task, index) =>
+                                            <TaskCard task={task} key={index} />
+                                        )
+                                    }
+                                </div>
+                            </div>
+                            {/* Completed Tasks */}
                             <div className="col-md-5 planned-task">
                                 <div className="row">
                                     <div className="col-md-12 planned-title">

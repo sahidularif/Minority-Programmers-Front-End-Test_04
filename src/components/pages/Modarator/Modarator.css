@@ -1,5 +1,5 @@
 .modrator-hero-section{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     mix-blend-mode: normal;
 }
 .elect-proposal-container{
@@ -99,7 +99,11 @@
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: #151371;
+}
+.view-task-header h1, h4{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
 }
 .modarator-hero-title p{
     font-family: 'Red Hat Display', sans-serif;
@@ -108,7 +112,7 @@
     font-size: 20px;
     line-height: 97.69%;
     text-align: center;
-    color: #fff;
+    color: #282828;
 }
 .modarator-hero-title span{
     color: yellow;
@@ -177,8 +181,7 @@
     padding-top:10px;  
     margin: 50px 0px;  
 }
-.user-details-prospol{
-    
+.user-details-prospol{    
     display: flex;
     align-items: center;
 }
@@ -225,8 +228,19 @@
     justify-content: center;
     font-family: 'Red Hat Display', sans-serif;
 }
+.try{
+    color: #000;
+}
+.proposal-details span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 97.69%;
+    color: #282828;
+    font-family: 'Red Hat Display', sans-serif;
+}
 
-.replies span, .views span{
+.replies span{
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -237,7 +251,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.4);
 }
 .proposal-votes{
@@ -304,6 +318,12 @@
     width: 180px;
     height: 40px;
 }
+.btn-view:hover{
+    background: rgb(242, 245, 247);
+}
+.btn-elect:hover{
+    background: rgba(21, 19, 113, 0.9);
+}
 .ct-notification-btn{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 20px;
@@ -345,6 +365,12 @@
     margin: 0px 5px;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
 }
+.btn-proposal-approve:hover{
+    background: rgba(21, 19, 113, 0.9);
+}
+.btn-proposal-disapprove:hover{
+    background: rgba(255, 255, 255, .1);
+}
 .btn-proposal-disapprove{
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
@@ -362,8 +388,13 @@
     filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
 }
 /* elected short proposal */
+.elected-proposal-container{
+    background: rgba(40, 40, 40, 0.9);
+    mix-blend-mode: normal;
+    border-radius: 30px;
+}
 .unselected-task{
-    opacity: 0.1;
+    opacity: 0.2;
 }
 .proposal-box{
     background: #FFFFFF;
@@ -477,10 +508,10 @@
     padding-top: 0%;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 19px;
     letter-spacing: 0.03em;    
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 1);
   }
   .replies, .views{
       text-align: center;
@@ -533,4 +564,7 @@
     line-height: 97.69%;
     text-align: center;    
     color: #FFFFFF;
+  }
+  .btn-view-proposal:hover{
+    background: rgba(21, 19, 113, 0.9);
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../common/common.css';
+import '../../common/common.css';
 const Earn = () => {
     return (
         <div className="container p-5 g-0">

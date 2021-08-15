@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../common/SideNav.css';
+import '../../common/SideNav.css';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
@@ -17,10 +17,6 @@ const Topbar = () => {
     return (
         <section id="header">
             <Navbar
-                toggleSidebar={toggleSidebar}
-            />
-            <Sidebar
-                sidebar={sidebar}
                 toggleSidebar={toggleSidebar}
             />
         </section>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../common/SideNav.css';
-import userPhoto from '../../../images/task-user.png'
+import userPhoto from '../../../images/user-pic.png'
 import { Link } from 'react-router-dom';
 
 const Sidebar = ({ sidebar, toggleSidebar }) => {

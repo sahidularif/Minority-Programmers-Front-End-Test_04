@@ -5,7 +5,7 @@ import taskUser from '../../../images/task-user.png';
 import '../../common/common.css';
 import './Notification.css';
 import data from '../../../fakedata/Data.json';
-import TaskCard from '../../common/TaskCard';
+import TaskCard from './TaskCard';
 
 const TaskNotification = () => {
     const tasks = data[0].tasks

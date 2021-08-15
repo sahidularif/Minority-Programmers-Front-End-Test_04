@@ -2,7 +2,8 @@ import React from 'react';
 import '../../common/SideNav.css';
 import userPIc from '../../../images/user-pic.png';
 import { Link } from 'react-router-dom';
-
+import sideIcon1 from '../../../images/core-team-icon.png';
+import sideIcon2 from '../../../images/side-user.png';
 const Sidebar = ({ sidebar, toggleSidebar }) => {
     return (
         <>
@@ -15,10 +16,17 @@ const Sidebar = ({ sidebar, toggleSidebar }) => {
                             <h3 className="user-name">Hello, <span>Shot</span></h3>
                         </div>
                         <div className="home-link">
-                            <Link to="/navbar">Home</Link>
+                            <Link to="/">Home</Link>
                         </div>
                         <div className="sidebar-title">
-                            <Link to="/navbar">Governance</Link>
+                            <Link to="/">Governance</Link>
+                        </div>
+                        <div className="side-user d-flex">
+                            <p>Roles</p>
+                            <span className="d-flex justify-content-between">
+                                <img src={sideIcon1} alt="user" />
+                                <img src={sideIcon2} alt="user" />
+                            </span>
                         </div>
 
                         <ul className="sidebar-links">

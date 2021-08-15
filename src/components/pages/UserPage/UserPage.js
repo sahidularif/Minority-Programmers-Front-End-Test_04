@@ -1,13 +1,17 @@
 import React from 'react';
-import heroImage from '../../images/heroImage.png'
-import '../common/common.css';
+import heroImage from '../../../images/heroImage.png'
+import '../../common/common.css';
 import './user-style.css'
 import Proposals from './Proposals';
 import Earn from './Earn';
 import ProposalVote from './ProposalVote';
-import data from '../../fakedata/Data.json';
+import data from '../../../Data.json';
+
 const UserPage = () => {
     const proposals = data[1].proposals
+    const proposals2 = data[1].proposals;
+    const proposals3 = data[1].proposals.slice(0, 3);
+
     return (
         <>
             <div className="container-fluid g-0">
@@ -49,11 +53,27 @@ const UserPage = () => {
 
                         </div>
                         <div className="row d-flex justify-content-center m-5 align-items-center">
-                            
+
                             <div className="col-md-11 text-center proposals p-3">
-                            <h3 className="text-light align-left">You Voted For The Following Proposals.</h3>
-                                <ProposalVote />
-                                <ProposalVote />
+                                <h3 className="text-light align-left">You Voted For The Following Proposals.</h3>
+                                {
+                                    proposals3.map((item) =>
+                                        item.approvedStatus === null &&
+                                        <ProposalVote
+                                            key={item.id}
+                                            title={item.title}
+                                            type={item.type}
+                                            category={item.category}
+                                            createdBy={item.createdBy}
+                                            createdDate={item.createdDate}
+                                            replies={item.replies}
+                                            totalVotes={item.totalVotes}
+                                            views={item.views}
+                                            description={item.description}
+                                            completed={item.completedStatus}
+                                        />
+                                    )
+                                }
                             </div>
 
                         </div>

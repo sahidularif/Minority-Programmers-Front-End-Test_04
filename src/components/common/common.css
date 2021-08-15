@@ -7,6 +7,9 @@
   body{
     font-family: 'Red Hat Display', sans-serif;
   }
+  .task.Link a {
+    text-decoration: none;
+  }
   .body-bg{
     background: linear-gradient(90deg, rgb(255, 6, 184) 0%, rgb(255, 199, 0) 100%);
   }
@@ -30,6 +33,7 @@
   .proposal-container{
     background: linear-gradient(90deg, rgb(255, 6, 184) 0%, rgb(255, 199, 0) 100%);
     font-family: var(--font);
+    padding-top: 100px;
   }
   .proposals{
       border-radius: 20px;
@@ -56,6 +60,12 @@
     color: #fff; 
     height: 40px; font-size: 18px;
     border: none;
+  }
+  .btn-create:hover{
+    background: rgba(21, 19, 113, 0.9);
+  }
+  .btn-view:hover{
+    background: rgba(255, 255, 255, .1);
   }
   hr.line{
     border: 2px solid white;
@@ -170,16 +180,29 @@
     border-right:5px solid #151371;
     border-left:5px solid #151371;
   }
+  .move-task{
+    border-right:5px solid #151371;
+    border-left:5px solid #151371;
+  }
   .task-cont span{
+    font-family: 'Red Hat Display', sans-serif;
     color: gainsboro;
     font-weight: 100;
   }
   .task-count p{
+    font-family: 'Red Hat Display', sans-serif;
     margin-top: 0%;
+    color: #282828;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 97.69%;
     margin-bottom: 0%;
+    cursor: pointer;
   }
   .task-count i{
     font-size: 50px;
+    color: #9F9F9F;
   }
   .task-count-arrow div{
     margin: 0%;
@@ -188,11 +211,74 @@
   .icons img{
     width: 40px;margin-right: 20px;
   }
+  .move-to-progress {
+    background: rgba(255, 255, 255, 0.6);
+    align-items: center;
+    text-align: center;
+    padding: 40px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .move-to-progress h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #151371;
+  }
+  .move-to-progress p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 98.69%;
+    text-align: center;
+    color: #282828;
+  }
   .btn-add-sub{
     background-color: #FF62D2;
     border: none;
     color: white;
     border-radius: 5px;
+  }
+  .btn-add-sub:hover{
+    background-color: #7372AE;
+  }
+  .btn-move-to-progress{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 97.69%;
+    background: #151371;
+    color:#fff;
+    border: none;
+    width: 138px;
+    height: 40px;
+    margin: 0px 5px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.btn-move-to-progress:hover{
+  background: rgba(21, 19, 113, 0.9);
+}
+  .btn-move-to-reviw{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 97.69%;
+    background: #151371;
+    color:#fff;
+    border: none;
+    width: 168px;
+    height: 40px;
+    margin: 0px 5px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+  .btn-move-to-reviw:hover{
+    background: rgba(21, 19, 113, 0.9);
   }
   .btn-create-task{
     background-color: #151371;
@@ -202,13 +288,19 @@
     color: white;
     border-radius: 5px;
   }
+  .btn-create-task:hover{
+    background: rgba(21, 19, 113, 0.9);
+  }
   .btn-planned{
-    background-color: #8685B2;
+    background-color: #7876B5;
     border: none;
     width: 120px;
     height: 30px;
     color: white;
     border-radius: 5px;
+  }
+  .btn-planned:hover{
+    background-color: #7372AE;
   }
   .ct-notification-btn{
     background: linear-gradient(103.85deg, #FF00B8 2.54%, #FF655B 58.76%, #FFC700 113.82%);
@@ -216,6 +308,12 @@
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
     height: 40px;
+  }
+  .ct-notification-btn:hover{
+    background: linear-gradient(103.85deg, #9b728f 100%, #df5349 0%, #ffc800bd 300%);
+  }
+  .btn-move-to-progress:hover{
+    background: rgba(21, 19, 113, 0.9);
   }
   /* proposal-status */
   .proposal-status{
@@ -239,6 +337,8 @@
     background: linear-gradient(180deg, rgba(21, 19, 113, 0.6) 0%, rgba(0, 0, 0, 0.18) 100%);
     border-radius: 10px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .planned-title{
     background-color: #151371;
@@ -296,6 +396,9 @@
   font-size: 12px;
   color:#151371 ;margin: 0%; padding: 0%;
 }
+.btn-tag:hover{
+  background-color: #7372AE;
+}
 
 .btn-tag2{
   background-color: #DEDEEB;
@@ -305,6 +408,9 @@
   height: 20px;
   font-size: 12px;
   margin: 0%; padding: 0%;
+}
+.btn-tag2:hover{
+  background: rgba(21, 19, 113, 0.9);
 }
 /* task arrow button */
 .design{
@@ -423,7 +529,12 @@
   color: orange;
 }
 .task-title-name h3 {
-  color: rgba(241, 177, 177, 0.8);
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28.5px;
+  line-height: 111.19%;
+  color: rgba(0, 0, 0, 0.8);
   padding-left: 10px;
 }
 .task--sub--all_details,
@@ -432,7 +543,7 @@
   display: flex;
 }
 .task--sub--date__properties.task--sub__created span{
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-style: 100;
 }
 .task--sub--all_details {
@@ -483,13 +594,17 @@
 .task--sub__icon {
   background: rgba(20, 20, 113, 0.6);
   color: #ffffffff;
-  padding: 5px 6px 3px;
+  padding: 03px 0px 5px 7px;
   border-radius: 50%;
+  width: 30.05px;
+  height: 30.05px;
+  justify-content: center;
+  align-items: center;
 }
 .task--sub--date__properties {
   display: flex;
   align-items: center;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: 100;
 }
 .task--sub--date__properties img {
@@ -502,6 +617,7 @@
 .task--sub--date__properties .task--sub__created h4 {
   color: #282828;
   font-weight: 500;
+  font-size: 18px;
 }
 .task--sub--date__properties .task--sub__created .fa-play {
   color: #ff00b8;
@@ -515,7 +631,7 @@
   color: rgba(0, 0, 0, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -552,11 +668,11 @@
   padding-bottom: 0%;
   text-align: center;
   color: #777777;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: bold;
 }
 .task-description-inpu button{
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: bold;
 }
 .btn-show-more {
@@ -568,9 +684,12 @@
   border: none;
   outline: none;
   padding: 6px 20px;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   color: #777777;
   font-weight: bold;
+}
+.btn-show-more:hover{
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .btn-add-attachment {
   right: 0;
@@ -580,11 +699,14 @@
   border: 0.75px solid rgba(0, 0, 0, 0.5);
   outline: none;
   padding: 6px 10px;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #777777;
+}
+.btn-add-attachment:hover{
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .btn-add-attachment svg {
   margin-top:3px;
@@ -610,7 +732,7 @@
 .task-description-input textarea::placeholder {
   letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.7);
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
 }
 .task-description-add-substack {
   margin-top: 15px;
@@ -631,7 +753,7 @@
 .task--sub--input textarea {
   height: 43px;
   background: #e7e7e7;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
   width: 100%;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
@@ -639,7 +761,7 @@
 .task-status textarea{
   color: #777777;
   font-weight: 100;
-  font-family: Red Hat Display;
+  font-family: 'Red Hat Display', sans-serif;
 }
 .task--sub--body__checklist,
 .task--sub--body__comment {

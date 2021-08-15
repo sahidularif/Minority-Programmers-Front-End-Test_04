@@ -64,7 +64,7 @@ const CreateTask = () => {
                             </div>
                         </div>
                         <div className="container-fluid proposal-container justify-content-center align-items-center">
-                            <div className="row d-flex pt-5 justify-content-center align-items-center g-0">
+                            <div className="row d-flex pt-2 justify-content-center align-items-center g-0">
                                 <div className="col-md-10 m-3  bg-light p-3 add-task">
                                     <div className="row">
                                         <h4>TYPE TASK NAME HERE</h4>

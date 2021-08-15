@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../common/common.css';
+import userPic from '../../../images/task-user.png'
 import { FaAngleRight, FaPrint, FaShareAlt, FaCircle, FaBars, FaRegFlag, FaRegHourglass, FaPlayCircle, FaPlus, FaRegSmile, FaEnvelope, FaComment, FaAngleDown } from "react-icons/fa";
 import taskUser from '../../../images/task-status-user-pic.png';
 import laUser from '../../../images/task-status-header-LA.png';
@@ -17,46 +18,54 @@ const TaskStatus = () => {
             <div className="container-fluid g-0 body-bg root-bg">
                 <div className="row root-bg">
                     <div className="col-md-12 bg-light g-0">
-                        <div className="row d-flex pt-5 justify-content-center align-items-center task-container task-bg g-0">
-                            <div className="col-md-10 align-items-center task-proposal">
-                                <div className="task">
-                                    <div className="task-title w-100">
+                        <div className="row d-flex pb-5 pt-5 justify-content-center align-items-center task-container task-bg g-0">
+                        <div className="col-md-10 elect-proposal-box justify-content-center align-items-center">
+                                <div className="proposal-notification-title">
+                                    <div className="proposal-title-type-cate">
                                         <h4>Proposal Title</h4>
-                                        <p><strong>Type: </strong>Enhancement&nbsp;&nbsp;&nbsp;<strong>Category: </strong>Incubator</p>
+                                        <h6><strong>Type:</strong> Enhancement <strong>Category: </strong> Incubator</h6>
                                     </div>
-                                    <div className="task-user w-100 justify-content-between">
-                                        <div className="col-md-3 task-cont d-flex">
-                                            <img src={taskUser} className="" alt="" />
-                                            <p>
-                                                <p><span>Created by</span><br /> User name</p>
-                                            </p>&nbsp;&nbsp;
-                                            <p>
-                                                <p><span>Created on</span><br /> Mar 25</p>
-                                            </p>
+                                    <div className="days-to-left">
+                                       
+                                    </div>
+                                </div>
+
+                                <div className="proposal-user-details">
+                                    <div className="user-details-prospol">
+                                        <img src={userPic} alt="" srcset="" />
+                                        <div className="username align-items-center">
+                                            <span>Created by</span>
+                                            <h5>User Name</h5>
                                         </div>
-                                        <div className="col-md-3 task-cont d-flex align-items-center justify-content-evenly">
-
-                                            <p className="task-count">
-                                                <p>58<br /> <span>Replies</span></p>
-                                            </p>&nbsp;&nbsp;
-                                            <p className="task-count">
-                                                <p>74<br /> <span>Views</span></p>
-                                            </p>
-                                            <p className="task-count">
-                                                <p><i class="fas fa-caret-up"></i></p>
-                                                <p><span>267</span></p>
-                                                <p><i class="fas fa-sort-down"></i></p>
-                                            </p>
-
+                                        <div className="created-date-proposal">
+                                            <span>Created on</span>
+                                            <h5>Mar 25</h5>
                                         </div>
                                     </div>
-                                    <div className="task-title d-flex p-3">
-                                        <div className="col-md-10">
-                                            <span>Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex.</span>
+                                    <div className="proposal-details align-items-center">
+                                        <div className="replies">
+                                            <span>58</span>
+                                            <h6>Replies</h6>
                                         </div>
-                                        <div className="col-md-2">
-                                            <span><button className="btn btn-primary ">Read more</button></span>
+                                        <div className="views">
+                                            <span>74</span>
+                                            <h6>Views</h6>
                                         </div>
+                                        <div className="proposal-votes">
+                                            <i class="fas fa-caret-up"></i>
+                                            <span className="vote-count-num">267</span>
+                                            <i class="fas fa-sort-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row proposal-text-btn justify-content-between">
+                                    <div className="col-md-9 proposal-text">
+                                        <p>
+                                            Details about proposal - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare ullamcorper tellus, vel euismod odio posuere ut. Quisque quis lacinia tortor. Donec auctor consectetur nibh, eu varius mi porta nec. Quisque ultricies odio vitae nibh malesuada tristique vel sed leo. Donec egestas, urna eu auctor ultricies, massa lorem pellentesque quam, vitae congue urna quam ultricies ex.
+                                        </p>
+                                    </div>
+                                    <div className="col-md-3 proposal-btn">
+                                        <button type="button" className="btn btn-primary">Read More</button>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +74,7 @@ const TaskStatus = () => {
                         <div className="container-fluid proposal-container justify-content-center">
                             <div className="row d-flex pt-5 justify-content-center g-0">
                                 {/*  */}
-                                <div className="col-md-10 m-3 bg-light p-3 add-task">
+                                <div className="col-md-10 m-3 bg-light p-3">
                                     <div className="row">
                                         <div className="ttask--header">
                                             <div className="task-header-top">
@@ -171,7 +180,7 @@ const TaskStatus = () => {
                                                     </div>
                                                     <div className="add--comment">
                                                         <div className="comment--icons__sare justify-content-between">
-                                                        <i className="fas fa-paperclip"></i>
+                                                            <i className="fas fa-paperclip"></i>
                                                             <FaRegSmile className="fa-smile" />
                                                         </div>
                                                         <div className="comment--icons__sare">

@@ -1,6 +1,6 @@
 import React from 'react';
-import './common.css';
-import taskUser from '../../images/task-user.png';
+import '../../common/common.css';
+import taskUser from '../../../images/task-user.png';
 import { FaFlag, FaEllipsisV } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ const TaskCard = (propos) => {
     return (
         <div className="col-md-6 mb-2 mt-2 d-flex align-items-center">
             <div class="root d-flex align-items-center" id="task">
-                <Link to={"/user/tasks/" + id}>
+                <Link to={"/core-team/tasks/" + id} style={{textDecoration:'none'}}>
                     <div class="content d-flex">
                         <div className="d-flex justify-content-between">
                             <h6 className="text-right">{description}</h6>

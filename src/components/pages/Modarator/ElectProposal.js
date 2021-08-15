@@ -27,7 +27,7 @@ const ElectProposal = (props) => {
                             </div>
                             <div className="proposal-details align-items-center">
                                 <div className="replies">
-                                    <span>{replies}</span>
+                                    <span className="tt">{replies}</span>
                                     <h6>Replies</h6>
                                 </div>
                                 <div className="views">

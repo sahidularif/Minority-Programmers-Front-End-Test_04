@@ -1,9 +1,9 @@
 import React from 'react';
 import './ProposalProgress.css';
-import unaproved from '../../images/unaproved.png';
-import planned from '../../images/planned.png';
-import progress from '../../images/progress.png';
-import completed from '../../images/completed.png';
+import unaproved from '../../../images/unaproved.png';
+import planned from '../../../images/planned.png';
+import progress from '../../../images/progress.png';
+import completed from '../../../images/completed.png';
 
 const ProposalProgress = () => {
     return (

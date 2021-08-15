@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../UserPage/Proposal.css';
+import '../UserPage/Proposal.css';
 
 const PMProposals = (props) => {
     const { type, catergory, replies, views } = props.proposal;

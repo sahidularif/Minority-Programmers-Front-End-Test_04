@@ -3,7 +3,7 @@ import heroImage from '../../../images/Illustration.png'
 import modIcon from '../../../images/mod-icon.png';
 import '../../common/common.css';
 import data from '../../../fakedata/Data.json';
-import TaskCard from '../../common/TaskCard';
+import TaskCard from './TaskCard';
 
 const ViewTask = () => {
     const plannedTask = data[0].tasks.slice(0, 6);
@@ -18,7 +18,7 @@ const ViewTask = () => {
                         <div className="row d-flex justify-content-center align-items-center">
                             <div className="col-md-6 view-task-header">
                                 <img src={modIcon} alt="" className="img-fluid" />
-                                <div className="text-center text-light">
+                                <div className="text-center view-task-title text-light">
                                     <h1>View Tasks</h1>
                                     <h4>View, organize and access your tasks here.</h4>
                                 </div>

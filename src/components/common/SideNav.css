@@ -55,6 +55,7 @@
       align-items:center;
       font-family: 'Red Hat Display';
       padding-left: 35px;
+      padding-top: 10px;
   } 
 
   .home-link{
@@ -72,25 +73,31 @@
     padding: 30px 35px;
     
   }
-  
+  .side-user p{
+    color: violet;
+  }
   .sidebar-title a{
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
-    padding: 35px 35px;
-    
+    padding: 35px 35px;    
+  }
+  .sidebar-title{
+    height: 50px;
+  }
+  .side-user{
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: mediumvioletred;
   }
   .sidebar ul li:active,.sidebar ul li:hover {
     background: rgba(212, 224, 214, 0.1);
     mix-blend-mode: hard-light;
     border-left: 3px solid #fff;
 }
- .active{
-    background: rgba(212, 224, 214, 0.1);
-    mix-blend-mode: hard-light;
-    border-left: 3px solid #fff;
-}
-.sidebar-links a{
+
+.sidebar-links li a{
   text-decoration: none;
   color: #fff;
   font-family: 'Red Hat Display';

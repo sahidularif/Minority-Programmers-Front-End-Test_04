@@ -1,44 +1,30 @@
-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-  }
-  
+
   .hero-container {
-    /* background: url('../../../images/image4.jpg') center center/cover no-repeat;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
     height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
-    height: 100vh;
-    background-image: linear-gradient(rgba(74, 35, 62) 0%, rgba(62, 54, 38) 100%),url('../../../images/image6.jpg');
+    background-image: linear-gradient(rgba(21, 19, 113, 1), rgba(62, 54, 38) 100%),url('../../../images/image6.jpg');
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
     position: relative;
+    font-family: 'Red Hat Display', sans-serif;
   }
-  .hero-container .Navbar{
-    height: auto;
-  }
+  
   .hero-container .hero-text > h3 {
-    color: #FFBE09;
-    font-size: 100px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
     margin-top: 100px;
     text-align: center;
   }
   .hero-container .hero-text > p {
-    color: hsl(0, 0%, 100%);
+    font-family: 'Red Hat Display', sans-serif;
+    color: #FFBE09;
     font-size: 30px;
     text-align: center;
   }
   .hero-container .hero-btns{
+    font-family: 'Red Hat Display', sans-serif;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -48,16 +34,17 @@ video {
     margin-top: 8px;
     color: #fff;
     font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
   }
   
   .hero-btns {
     margin-top: 32px;
+    font-family: 'Red Hat Display', sans-serif;
   }
   
   .hero-btns .btn {
     margin: 6px;
+    font-family: 'Red Hat Display', sans-serif;
   }
   
   .fa-play-circle {
@@ -66,27 +53,35 @@ video {
   
   @media screen and (max-width: 960px) {
     .hero-container > h1 {
-      font-size: 70px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 40px;
       margin-top: -150px;
     }
   }
   
   @media screen and (max-width: 768px) {
     .hero-container > h1 {
-      font-size: 50px;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 30px;
       margin-top: -100px;
     }
-  
+    .hero-btns {
+      font-family: 'Red Hat Display', sans-serif;
+      display: flex;
+    }
     .hero-container > p {
+      font-family: 'Red Hat Display', sans-serif;
       font-size: 30px;
     }
   
     .btn-mobile {
+      font-family: 'Red Hat Display', sans-serif;
       display: block;
       text-decoration: none;
     }
   
     .btn {
+      font-family: 'Red Hat Display', sans-serif;
       width: 100%;
     }
   }

@@ -1,8 +1,7 @@
 import React from 'react'
 import Topbar from './Topbar'
 import UserPage from './UserPage'
-
-const Home = () => {
+const User = () => {
     return (
         <>
             <section id="user">
@@ -13,4 +12,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default User

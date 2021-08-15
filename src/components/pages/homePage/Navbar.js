@@ -2,32 +2,42 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import brand from '../../../images/brand.png';
-const Arif = ({toggleSidebar})=> {
+const Navbar = ({ toggleSidebar }) => {
 
 
     const [click, setClick] = useState(false);
+    const [show, setShow] = useState(false);
     const handleClick = () => setClick(!click);
+
     return (
         <>
-
             <div class="topnav" id="myTopnav">
-                <img src={brand} alt="" />
-                <a href="#home" class="">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                <img src={brand} className="logo" alt=""/>
+                <a href="#news">
+                    <button type="button" className="btn-vote"><i class="far fa-check-circle"></i> Vote</button>
+                </a>
+                <a href="#news">
+                    <button type="button" className="btn-connect-wallet">Connect Wallet</button>
+                </a>
+                <a href=""><i className="fas fa-search" onClick={() => setShow(true)} id="searchIcon"></i></a>
+                <a href="#news">
+                    <form>
+                        <input type="text" style={{ display: show ? "block" : "none" }} className="nav-search" id="search" />
+                    </form>
+                </a>
+                <a href=""><i className="fas fa-user"></i></a>
+                <a href="#contact"><i className="far fa-bell"></i></a>
+                <a href="#about"><i className="far fa-envelope"></i></a>
+                <a href="javascript:void(0);" className="icon" onclick="myFunction()">
+                    <i className="fa fa-bars"></i>
                 </a>
             </div>
-
             <nav className="navbar">
                 <div className="nav-container">
                     <div className="all" onClick={toggleSidebar}>
                         <i className="fas fa-bars"></i>
-                        <span>All</span>
+                        <span> All</span>
                     </div>
-
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
                             <NavLink
@@ -59,7 +69,7 @@ const Arif = ({toggleSidebar})=> {
                                 className="nav-links"
                                 onClick={handleClick}
                             >
-                                Project Manager
+                                Manager
                             </NavLink>
                         </li>
                         <li className="nav-item">
@@ -94,4 +104,4 @@ const Arif = ({toggleSidebar})=> {
     );
 }
 
-export default Arif;
+export default Navbar;

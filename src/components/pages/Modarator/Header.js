@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import '../../common/SideNav.css';
-import Navbar from '../../common/Navbar';
 import Sidebar from './Sidebar';
-
+import Navbar from '../homePage/Navbar';
 const Header = () => {
     const [sidebar, setSidebar] = useState(false);
     const toggleSidebar = () => {
