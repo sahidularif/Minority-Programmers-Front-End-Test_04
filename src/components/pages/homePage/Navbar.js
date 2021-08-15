@@ -12,7 +12,7 @@ const Navbar = ({ toggleSidebar }) => {
     return (
         <>
             <div class="topnav" id="myTopnav">
-                <img src={brand} className="logo" alt=""/>
+                <a href="/" style={{float:'left'}}><img src={brand} className="logo" alt="" /></a>
                 <a href="#news">
                     <button type="button" className="btn-vote"><i class="far fa-check-circle"></i> Vote</button>
                 </a>
